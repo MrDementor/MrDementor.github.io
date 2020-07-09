@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<style type="text/css">
+		body{
+		background-color: lightyellow;
+		font-family: cursive;
+		}
+		#h11{
+		color: blue;
+		text-align: center;
+		}
+		/*using 3 separate CSS classes or IDs*/
+		.spann{
+		color: green;
+		}
+		#formm{
+			color: brown;
+			font-family: monospace;
+			font-size: 150%; 
+		}
+	</style>
+
+	<title>final_assignment</title>
+	<script type="text/javascript">
+		//here we are testing the validity of given input
+		function validate_input()
+		{
+			var field=document.getElementById("f_name").value;
+			var regex=/^[A-Za-z]+$/;
+			if(regex.test(field))
+				document.getElementById("fn_message").innerHTML="valid input";
+			else
+				document.getElementById("fn_message").innerHTML="please enter valid first name";
+		}
+
+		//here we are validating phone number
+		function validate_phone()
+		{
+			var phone_no=document.getElementById("phone_num").value;
+			var regex=/^\d{3}-\d{3}-\d{4}$/;
+			if(regex.test(phone_no))
+				document.getElementById("ph_message").innerHTML="valid number";
+			else
+				document.getElementById("ph_message").innerHTML="not a valid number";
+		}
+	</script>
+	
+</head>
+
+
+<body>
+
+	<h1 id="h11">Please fill the review form</h1>
+	<form id="formm">
+		<!--creating a user review form of this course-->
+		First Name:
+		<input type="text" id="f_name" name="first_name" onblur="validate_input()" placeholder="Sourabh" required><span id="fn_message" class="spann">&nbsp;</span>
+		<br>
+		<br>
+		Last Name:
+		<input type="text" id="l_name" name="last_name" placeholder="Kumar">
+		<br>
+		<br>
+		Gender:
+		<input class="gen" type="radio" name="gender" value="male" checked="">Male
+		<input class="gen" type="radio" name="gender" value="female">Female
+		<input class="gen" type="radio" name="gender" value="others">Others
+		<br>
+		<br>
+		Date of birth:
+		<input type="date" name="date" required="">
+		<br>
+		<br>
+		Phone Number:
+		<input type="text" id="phone_num" name="p_number" onblur="validate_phone()" placeholder="xxx-xxx-xxxx" required=""><span id="ph_message" class="spann">&nbsp;</span>
+		<br>
+		<br>
+		E-mail:
+		<input type="email" name="email_id" placeholder="abcdef@gmail.com" required="">
+		<br>
+		<br>
+		You know well:
+		<input class="well" type="checkbox" name="know_well" value="HTML" checked>HTML
+		<input class="well" type="checkbox" name="know_well" value="CSS">CSS
+		<input class="well" type="checkbox" name="know_well" value="Javascript">Javascript
+		<br>
+		<br>
+		Rate this course:
+		<input type="number" name="rate_course" value="rate" placeholder="5" min="1" max="10">
+		<br>
+		<br>
+		Please write review:
+		<input type="text" name="review" placeholder="write your review here!">
+	</form>
+	
+</body>
+
+</html>
