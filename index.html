@@ -1,20 +1,140 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>CSS Cheat Sheet</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>html cheat</title>
 </head>
 <body>
-	<h1>Hello World</h1>
-	<div class="container">
-		<div class="Box-1">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	<!--Headings-->
+	<h1>hi heading one</h1>
+	<h2>h2 heading two</h2>
+	<h3>h3 heading three</h3>
+	<h4>h4 heading four</h4>
+	<h5>h5 heading five</h5>
+	<h6>h6 heading 6six</h6>
+	<!--Paragraphs-->
+	<p>
+		Lorem ipsum<strong> dolor sit amet, consectetur</strong> adipisicing elit, sed do eiusmod
+		tempor <em>incididunt ut labore et dolore magna aliqua. Ut enim ad minim</em> veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute <a href="test1.html" target="_blank">irure dolor in reprehenderit</a> in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+	<p>
+		Lorem ipsum dolor <mark>sit amet</mark>, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation<strike> ullamco laboris nisi</strike> ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum <small>dolore eu fugiat nulla pariatur. Excepteur sint </small>occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+	<!--Lists-->
+	<ul>
+		<li>item no 1</li>
+		<li>item no 2</li>
+		<li>item no 3</li>
+		<li>item no 4</li>
+	</ul>
+	<ol>
+		<li>item no 1</li>
+		<li>item no 2</li>
+		<li>item no 3</li>
+		<li>item no 4</li>
+	</ol>
+	<!--Tables-->
+	<table>
+		<thead>
+			<caption>first_table</caption>
+			<tr>
+				<th>NAME</th>
+				<th>EMAIL</th>
+				<th>ROLL</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>sourabh</td>
+				<td>kjdugf.gmail</td>
+				<td>54</td>
+			</tr>
+			<tr>
+				<td>sunny</td>
+				<td>kkalvf.gmail</td>
+				<td>78</td>
+			</tr>
+			<tr>
+				<td>skaimsjd</td>
+				<td>qorpmz.gmail</td>
+				<td>20</td>
+			</tr>
+		</tbody>
+	</table>
+	<hr>
+	<!--Forms-->
+	<br>
+	<form action="process.php" method="POST">
+		<div>
+			<label>First Name</label>
+			<input type="text" name="first_name" placeholder="input first name">
+		</div>
+		<br>
+		<div>
+			<label>Last Name</label>
+			<input type="text" name="last_name">
+		</div>
+		<br>
+		<div>
+			<label>Email-ID</label>
+			<input type="email" name="email">
+		</div>
+		<br>
+		<div>
+			<label>Message</label>
+			<textarea name="message" placeholder="anything you want to write here"></textarea>
+		</div>
+		<br>
+		<div>
+			<label>Gender</label>
+			<select name="gender">
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="others">Others</option>
+			</select>
+		</div>
+		<br>
+		<div>
+			<label>Age</label>
+			<input type="number" name="Age" value="25">
+		</div>
+		<br>
+		<div>
+			<label>Birthday</label>
+			<input type="date" name="Birthdays">
+		</div>
+		<br>
+		<input type="submit" name="submit" value="submit">
+	</form>
+	<!--Buttons-->
+	<br>
+	<button>Click Me</button>
+	<br><hr><br>
+	<!--Image-->
+	<a href="anonymous-wallpapers.jpg" target="_blank">
+		<img src="anonymous-wallpapers.jpg" alt="OH OH There should be an image" height="50" width="100">
+	</a>
+	<br>
+	<blockquote>
+		<cite>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</div>
-	</div>
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</cite>
+	</blockquote><br>
+	<p>The <abbr title="World Wide Web" style="color: blue">WWW</abbr> is awesome</p><br>
+	<div style="margin-top: 500px"></div>
 </body>
 </html>
